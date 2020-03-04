@@ -26,7 +26,7 @@ class Chapter10 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1> Importantly, remember the most important thing!</h1>
+        <h1> But the most important takeaway of our time so far is: </h1>
         {/* This is you wrapper where animation will load */}
         <div
           style={{ width: 400, margin: "0 auto" }}

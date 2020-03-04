@@ -26,7 +26,11 @@ class Chapter1 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2> But, I figured I couldn’t dance for shit. </h2>
+        <h2>
+          {" "}
+          Don't mind me, it is just a cover up. While I was there, I just
+          figured I couldn’t dance for shit.{" "}
+        </h2>
         {/* This is you wrapper where animation will load */}
         <div
           style={{ width: 400, margin: "0 auto" }}

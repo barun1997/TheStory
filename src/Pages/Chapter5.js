@@ -28,8 +28,13 @@ class Chapter5 extends React.Component {
       <div className="App">
         <h2>
           {" "}
-          So months of video calling later, I begun knowing a thing or two about
-          this girl.{" "}
+          One thing let to the other, and we were now all over our social
+          medias. Snap, Insta, you name it. I was kind of worried because I
+          can't still get to her FB for some reason. :/ But anyways, I begun
+          knowing a thing or two about this girl through hours of non-sleeping
+          video calls. But I was seven seas away (or is it just two?); we
+          couldn't meet. But, we're practically meeting everyday through our
+          non-ending calls (sometimes it felt like forever honestly LOL).{" "}
         </h2>
         {/* This is you wrapper where animation will load */}
         <div

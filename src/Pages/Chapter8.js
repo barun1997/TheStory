@@ -26,7 +26,11 @@ class Chapter8 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2> Here it is, for more memories together. And more love. </h2>
+        <h2>
+          {" "}
+          But there are so many more memories to be made. So here is for: more
+          memories and more love.
+        </h2>
         {/* This is you wrapper where animation will load */}
         <div
           style={{ width: 400, margin: "0 auto" }}

@@ -71,7 +71,10 @@ class Chapter7 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2> So far we have done these things together: </h2>
+        <h1 style={{ color: "blue" }}>
+          {" "}
+          Boo, so far, we have done these things together:{" "}
+        </h1>
         {/* This is you wrapper where animation will load */}
         <div
           style={{ width: 400, margin: "0 auto" }}

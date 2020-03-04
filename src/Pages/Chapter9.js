@@ -28,8 +28,8 @@ class Chapter9 extends React.Component {
       <div className="App">
         <h2>
           {" "}
-          This day, brought you to us. The world. For you're so beautiful. Happy
-          Birthday baby!{" "}
+          And to celebrate this day, which brought you to us. The world. For
+          you're so beautiful. Happy Birthday baby!{" "}
         </h2>
         {/* This is you wrapper where animation will load */}
         <div

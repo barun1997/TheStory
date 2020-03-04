@@ -33,9 +33,14 @@ class Chapter2 extends React.Component {
         </h1>
 
         <h2>
-          Anyways, let’s step back to the first day itself. It was flight day,
-          but just a few hours before that day, I sent a creepy instagram follow
-          request to a girl who was allegedly mero chineko didi ko student.
+          Anyways, importantly, let’s step back to where it began. It was flight
+          day, but just a few hours before that day, while I was biting my nails
+          without much thought (because I had a flight, LOL), I sent a creepy
+          instagram follow request to a girl who{" "}
+          <p style={{ color: "red" }}>
+            {" "}
+            was allegedly mero chineko didi ko student.
+          </p>
         </h2>
         {/* This is you wrapper where animation will load */}
         <div

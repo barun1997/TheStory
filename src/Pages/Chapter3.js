@@ -26,13 +26,16 @@ class Chapter3 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h1> Days went by. I didn’t send a reply. </h1>
+        <h1> This is how I like to tell the story aajkal. </h1>
 
         <h2>
           {" "}
-          But one day, she posts about her brothers’ and how the younger ones
-          always get an advantage. Young I am, I knew it was my forte. I pounced
-          on, and I dmd, “I can relate”.{" "}
+          Days went by, and I did a FBI search on the girl (Lol, maybe I
+          didn't). But one day, she posts about her brothers and how the younger
+          ones always get an advantage. Young I am, I knew it was my forte. I
+          pounced on, and I dmd, “I can relate”. I had two sisters after all.
+          What's the use of being born a decade later than all your siblings if
+          you can't seize moments like these?{" "}
         </h2>
         {/* This is you wrapper where animation will load */}
         <div

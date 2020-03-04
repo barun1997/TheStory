@@ -26,7 +26,12 @@ class Chapter4 extends React.Component {
   render() {
     return (
       <div className="App">
-        <h2> And relate she did. She replied an entire essay to that.</h2>
+        <h2>
+          {" "}
+          And relate she did. She replied an entire essay to that. I like to
+          assume she always wanted to talk to me. She just didn't like 'being
+          first'.
+        </h2>
         {/* This is you wrapper where animation will load */}
         <div
           style={{ width: 400, margin: "0 auto" }}
