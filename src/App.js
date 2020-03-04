@@ -12,61 +12,61 @@ import Chapter7 from "./Pages/Chapter7";
 import Chapter8 from "./Pages/Chapter8";
 import Chapter9 from "./Pages/Chapter9";
 import Chapter10 from "./Pages/Chapter10";
+import Parent from "./Pages/Parent";
+import { RenderComponent } from "./Pages/RenderComponent";
 
-let animObj = null;
+const data = [
+  Parent,
+  Chapter1,
+  Chapter2,
+  Chapter3,
+  Chapter4,
+  Chapter5,
+  Chapter6,
+  Chapter7,
+  Chapter8,
+  Chapter9,
+  Chapter10
+];
 
 class App extends React.Component {
-  componentDidMount() {
-    console.log("componentDidMount");
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0
+    };
+  }
 
-    //call the loadAnimation to start the animation
-    animObj = lottie.loadAnimation({
-      container: this.animBox, // the dom element that will contain the animation
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animationData // the path to the animation json
-    });
-  }
-  handleStop = () => {
-    animObj.stop();
+  handleNext = () => {
+    const index = this.state.index;
+    if (index < 10) {
+      this.setState({
+        index: index + 1
+      });
+    }
+    console.log(this.state.index);
   };
-  handlePlay() {
-    animObj.play();
-  }
+  handlePrevious = () => {
+    const index = this.state.index;
+    if (index >= 1) {
+      this.setState({
+        index: index - 1
+      });
+    }
+    console.log(this.state.index);
+  };
+
   render() {
+    var component = data[this.state.index];
+    console.log(component);
+
     return (
       <div className="App">
-        <h1>I figured out this is the most fitting way to tell our story.</h1>
-        <h2> First, Lets make this a little about me. </h2>
-        <h2>So I was in Australia, embracing my unusual lifestyle </h2>
-        <p style={{ textAlign: "center" }}>
-          {" "}
-          I was never a party guy, but this time, man, I went to clubs. But,
-          still, it just didn't feel right. Everyone around me danced
-          nonchalantly, with rhythym. They felt lively, but, there was I, in a
-          corner, and it all felt too distorted. I wanted an escape, yet, I'd
-          rather be there on a Sunday night than be alone at my room. After all,
-          I had gone to Australia to enjoy.
-        </p>{" "}
-        {/* This is you wrapper where animation will load */}
-        <div
-          style={{ width: 400, margin: "0 auto" }}
-          ref={ref => (this.animBox = ref)}
-        ></div>
-        <Chapter1 />
-        <Chapter2 />
-        <Chapter3 />
-        <Chapter4 />
-        <Chapter5 />
-        <Chapter6 />
-        <Chapter7 />
-        <Chapter8 />
-        <Chapter9 />
-        <Chapter10 />
+        <RenderComponent component={component} />
+        <button onClick={this.handlePrevious}> Click Previous </button>{" "}
+        <button onClick={this.handleNext}> Click Next </button>
       </div>
     );
   }
 }
-
 export default App;
