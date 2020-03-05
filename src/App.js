@@ -13,6 +13,7 @@ import Chapter8 from "./Pages/Chapter8";
 import Chapter9 from "./Pages/Chapter9";
 import Chapter10 from "./Pages/Chapter10";
 import Parent from "./Pages/Parent";
+import Chapter11 from "./Pages/Chapter11";
 import { RenderComponent } from "./Pages/RenderComponent";
 
 const data = [
@@ -26,7 +27,8 @@ const data = [
   Chapter7,
   Chapter8,
   Chapter9,
-  Chapter10
+  Chapter10,
+  Chapter11
 ];
 
 class App extends React.Component {
@@ -40,12 +42,12 @@ class App extends React.Component {
 
   handleNext = () => {
     const index = this.state.index;
-    if (index < 10) {
+    if (index < 11) {
       this.setState({
         index: index + 1
       });
     }
-    if (index === 10) {
+    if (index === 11) {
       this.setState({
         visible: true
       });
